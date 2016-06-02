@@ -1,3 +1,6 @@
 repositories:
   remote:
    - http://repo1.maven.org/maven2
+
+artifacts:
+  getopt4j: org.realityforge.getopt4j:getopt4j:jar:1.1

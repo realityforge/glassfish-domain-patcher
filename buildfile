@@ -15,7 +15,11 @@ define 'glassfish-domain-patcher' do
   pom.add_github_project('realityforge/glassfish-domain-patcher')
   pom.add_developer('realityforge', 'Peter Donald', 'peter@realityforge.org', ['Developer'])
 
-  package(:jar)
+  compile.with :getopt4j
+
+  package(:jar).tap do |jar|
+    jar.merge(:getopt4j)
+  end
   package(:sources)
   package(:javadoc)
 end
