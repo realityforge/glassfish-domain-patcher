@@ -18,6 +18,7 @@ define 'glassfish-domain-patcher' do
   compile.with :getopt4j
 
   package(:jar).tap do |jar|
+    jar.manifest['Main-Class'] = 'org.realityforge.glassfish.patcher.Main'
     jar.merge(:getopt4j)
   end
   package(:sources)
