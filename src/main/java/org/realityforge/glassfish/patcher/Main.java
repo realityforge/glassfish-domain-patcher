@@ -293,6 +293,7 @@ public class Main
         case HELP_OPT:
         {
           printUsage();
+          System.exit( SUCCESS_EXIT_CODE );
           return false;
         }
       }
