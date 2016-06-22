@@ -24,4 +24,3 @@ define 'glassfish-domain-patcher' do
   package(:sources)
   package(:javadoc)
 end
-
