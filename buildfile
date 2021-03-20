@@ -12,7 +12,7 @@ define 'glassfish-domain-patcher' do
 
   pom.add_apache_v2_license
   pom.add_github_project('realityforge/glassfish-domain-patcher')
-  pom.add_developer('realityforge', 'Peter Donald', 'peter@realityforge.org', ['Developer'])
+  pom.add_developer('realityforge', 'Peter Donald')
 
   compile.with :getopt4j
 
